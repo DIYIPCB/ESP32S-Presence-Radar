@@ -1,0 +1,18 @@
+R1.2 inward-stacked female sockets — 2026-10-14
+
+J2, J3 and J4 use 2.54mm vertical female sockets. J3 is in the upper-right area;
+J2 is lower-right and oriented with pin 1 TX at the top and pin 5 VCC at the bottom.
+J2 front-view top-to-bottom order: TX, RX, OUT, GND, VCC.
+LD2410C is intended to plug in with its radar antenna face upward and its body
+extending inward over the mainboard. This supersedes the unpublished R1.1 outward
+layout. J2 pin1 centre: (141.4,127) mm; J3 pin1: (141.4,108) mm in KiCad coordinates.
+Mainboard outline remains 45 x 50mm; the module envelope is intended to remain
+within it. The 16 x 22mm module outline in assembly-guide.svg is an estimate using
+a centred pin row. Exact pin-to-edge offsets, component underside clearance,
+socket height, male pin insertion and final enclosure size require sample checks.
+The illustration is not a verified mechanical model and does not certify RF
+coexistence. Wi-Fi/CSI/radar tests and first hardware power-up remain pending.
+J2: Wurth 61300511821; J3/J4: 61300411821; drill 1.02mm. J1 remains USB4105-GF-A.
+No electrical pin definitions or firmware rules have changed. C5 was repositioned
+to make room for J2. Prior ideal reset-RC simulation and six software rule tests
+are reused; current ERC/DRC/netlist checks are regenerated.
